@@ -3,10 +3,9 @@
 The Qwiic PT100 is based on the TI ADS122C04 and allows you to measure temperature accurately from
 100 Ohm Platinum Resistance Thermometers using 2, 3 or 4-wire connections
 
-![Top](img/Top.png)
-![Bottom](img/Bottom.png)
+![Qwiic_Instrument_ADC_-_PT100-01.jpg](https://cdn.sparkfun.com//assets/parts/1/5/6/6/2/16770-Qwiic_Instrument_ADC_-_PT100-01.jpg)
 
-![Dimension](img/Dimension.png)
+[Qwiic PT100 - ADS122C04 (SPX-16770)](https://www.sparkfun.com/products/16770)
 
 The ADS122C04 is a precision 24-bit delta-sigma analog to digital converter. It can measure voltage very
 accurately through two differential or four single-ended inputs. It has a flexible input multiplexer,

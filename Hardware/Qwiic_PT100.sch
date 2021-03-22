@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -109,15 +109,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -735,6 +760,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="RES-08701"/>
 <attribute name="VALUE" value="3.9k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1620OHM" prefix="R">
+<description>&lt;h3&gt;1620Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-0.1%-5PPM" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15120"/>
+<attribute name="VALUE" value="1620"/>
 </technology>
 </technologies>
 </device>
@@ -9449,163 +9495,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="New_Parts">
-<packages>
-<package name="SOP65P640X120-16N">
-<description>TSSOP PW0016A</description>
-<smd name="1" x="-2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="2" x="-2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="3" x="-2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="4" x="-2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="5" x="-2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="6" x="-2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="7" x="-2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="8" x="-2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="9" x="2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="10" x="2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="11" x="2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="12" x="2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="13" x="2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="14" x="2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="15" x="2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<smd name="16" x="2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
-<text x="0" y="4" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-4" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.2" y1="2.5" x2="2.2" y2="2.5" width="0.1" layer="51"/>
-<wire x1="2.2" y1="2.5" x2="2.2" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="2.2" y1="-2.5" x2="-2.2" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="-2.2" y1="-2.5" x2="-2.2" y2="2.5" width="0.1" layer="51"/>
-<wire x1="-2.2" y1="1.85" x2="-1.55" y2="2.5" width="0.1" layer="51"/>
-<wire x1="-1.85" y1="2.5" x2="1.85" y2="2.5" width="0.2" layer="21"/>
-<wire x1="1.85" y1="2.5" x2="1.85" y2="-2.5" width="0.2" layer="21"/>
-<wire x1="1.85" y1="-2.5" x2="-1.85" y2="-2.5" width="0.2" layer="21"/>
-<wire x1="-1.85" y1="-2.5" x2="-1.85" y2="2.5" width="0.2" layer="21"/>
-<wire x1="-3.675" y1="2.85" x2="-2.2" y2="2.85" width="0.2" layer="21"/>
-</package>
-<package name="0603">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ADS122C04IPWR">
-<description>TI ADS122C04</description>
-<wire x1="-10.16" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
-<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
-<pin name="A0" x="-12.7" y="8.89" length="short" direction="in"/>
-<pin name="A1" x="-12.7" y="6.35" length="short" direction="in"/>
-<pin name="!RESET" x="-12.7" y="3.81" length="short" direction="in"/>
-<pin name="DGND" x="-12.7" y="1.27" length="short" direction="pwr"/>
-<pin name="AVSS" x="-12.7" y="-1.27" length="short" direction="pwr"/>
-<pin name="AIN3" x="-12.7" y="-3.81" length="short" direction="in"/>
-<pin name="AIN2" x="-12.7" y="-6.35" length="short" direction="in"/>
-<pin name="REFN" x="-12.7" y="-8.89" length="short" direction="in"/>
-<pin name="SCL" x="12.7" y="8.89" length="short" rot="R180"/>
-<pin name="SDA" x="12.7" y="6.35" length="short" rot="R180"/>
-<pin name="!DRDY" x="12.7" y="3.81" length="short" direction="out" rot="R180"/>
-<pin name="DVDD" x="12.7" y="1.27" length="short" direction="pwr" rot="R180"/>
-<pin name="AVDD" x="12.7" y="-1.27" length="short" direction="pwr" rot="R180"/>
-<pin name="AIN0" x="12.7" y="-3.81" length="short" direction="in" rot="R180"/>
-<pin name="AIN1" x="12.7" y="-6.35" length="short" direction="in" rot="R180"/>
-<pin name="REFP" x="12.7" y="-8.89" length="short" direction="in" rot="R180"/>
-</symbol>
-<symbol name="RESISTOR">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADS122C04IPWR" prefix="U">
-<description>&lt;b&gt;24-Bit, 2kSPS, 4-Ch, Low-Power Delta-Sigma ADC With PGA, Voltage Reference, IDACs and I2C Interface&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.ti.com/lit/gpn/ads122c04"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ADS122C04IPWR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P640X120-16N">
-<connects>
-<connect gate="G$1" pin="!DRDY" pad="14"/>
-<connect gate="G$1" pin="!RESET" pad="3"/>
-<connect gate="G$1" pin="A0" pad="1"/>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="AIN0" pad="11"/>
-<connect gate="G$1" pin="AIN1" pad="10"/>
-<connect gate="G$1" pin="AIN2" pad="7"/>
-<connect gate="G$1" pin="AIN3" pad="6"/>
-<connect gate="G$1" pin="AVDD" pad="12"/>
-<connect gate="G$1" pin="AVSS" pad="5"/>
-<connect gate="G$1" pin="DGND" pad="4"/>
-<connect gate="G$1" pin="DVDD" pad="13"/>
-<connect gate="G$1" pin="REFN" pad="8"/>
-<connect gate="G$1" pin="REFP" pad="9"/>
-<connect gate="G$1" pin="SCL" pad="16"/>
-<connect gate="G$1" pin="SDA" pad="15"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="HEIGHT" value="1.2mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ADS122C04IPWR" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-ADS122C04IPWR" constant="no"/>
-<attribute name="PROD_ID" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RESISTOR" prefix="R">
-<description>Generic Resistor Package</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUSER_PART" value="660-RN731JTTD1621B05" constant="no"/>
-<attribute name="PROD_ID" value=" " constant="no"/>
-<attribute name="TEMP_COEFF" value="5PPM" constant="no"/>
-<attribute name="TOLERANCE" value="0.1%" constant="no"/>
-<attribute name="VALUE" value="1620" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Coils">
 <description>&lt;h3&gt;SparkFun Coils&lt;/h3&gt;
 In this library you'll find magnetics.
@@ -9717,6 +9606,121 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-IC-Conversion">
+<description>&lt;h3&gt;SparkFun Conversion ICs&lt;/h3&gt;
+This library is for ICs that perform analog to digital conversion, as well as digital to analog.  This includes not only strict ADCs, but audio in and out converters, decoders, thermocouple measurement ics the like.  Anything that is a single part that works between the two domains goes here.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOP65P640X120-16N">
+<description>TSSOP PW0016A</description>
+<smd name="1" x="-2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="2" x="-2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="3" x="-2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="4" x="-2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="5" x="-2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="6" x="-2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="7" x="-2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="8" x="-2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="9" x="2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="10" x="2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="11" x="2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="12" x="2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="13" x="2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="14" x="2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="15" x="2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="16" x="2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<text x="0" y="4" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.2" y1="2.5" x2="2.2" y2="2.5" width="0.1" layer="51"/>
+<wire x1="2.2" y1="2.5" x2="2.2" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="2.2" y1="-2.5" x2="-2.2" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-2.2" y1="-2.5" x2="-2.2" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-2.2" y1="1.85" x2="-1.55" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.85" y1="2.5" x2="1.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="1.85" y1="2.5" x2="1.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="1.85" y1="-2.5" x2="-1.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="-2.5" x2="-1.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-3.675" y1="2.85" x2="-2.2" y2="2.85" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADS122C04IPWR">
+<description>TI ADS122C04</description>
+<wire x1="-10.16" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
+<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="8.89" length="short" direction="in"/>
+<pin name="A1" x="-12.7" y="6.35" length="short" direction="in"/>
+<pin name="!RESET" x="-12.7" y="3.81" length="short" direction="in"/>
+<pin name="DGND" x="-12.7" y="1.27" length="short" direction="pwr"/>
+<pin name="AVSS" x="-12.7" y="-1.27" length="short" direction="pwr"/>
+<pin name="AIN3" x="-12.7" y="-3.81" length="short" direction="in"/>
+<pin name="AIN2" x="-12.7" y="-6.35" length="short" direction="in"/>
+<pin name="REFN" x="-12.7" y="-8.89" length="short" direction="in"/>
+<pin name="SCL" x="12.7" y="8.89" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="6.35" length="short" rot="R180"/>
+<pin name="!DRDY" x="12.7" y="3.81" length="short" direction="out" rot="R180"/>
+<pin name="DVDD" x="12.7" y="1.27" length="short" direction="pwr" rot="R180"/>
+<pin name="AVDD" x="12.7" y="-1.27" length="short" direction="pwr" rot="R180"/>
+<pin name="AIN0" x="12.7" y="-3.81" length="short" direction="in" rot="R180"/>
+<pin name="AIN1" x="12.7" y="-6.35" length="short" direction="in" rot="R180"/>
+<pin name="REFP" x="12.7" y="-8.89" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADS122C04IPWR" prefix="U">
+<description>&lt;b&gt;24-Bit, 2kSPS, 4-Ch, Low-Power Delta-Sigma ADC With PGA, Voltage Reference, IDACs and I2C Interface&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/ads122c04"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADS122C04IPWR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X120-16N">
+<connects>
+<connect gate="G$1" pin="!DRDY" pad="14"/>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="AIN0" pad="11"/>
+<connect gate="G$1" pin="AIN1" pad="10"/>
+<connect gate="G$1" pin="AIN2" pad="7"/>
+<connect gate="G$1" pin="AIN3" pad="6"/>
+<connect gate="G$1" pin="AVDD" pad="12"/>
+<connect gate="G$1" pin="AVSS" pad="5"/>
+<connect gate="G$1" pin="DGND" pad="4"/>
+<connect gate="G$1" pin="DVDD" pad="13"/>
+<connect gate="G$1" pin="REFN" pad="8"/>
+<connect gate="G$1" pin="REFP" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="16"/>
+<connect gate="G$1" pin="SDA" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ADS122C04IPWR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-ADS122C04IPWR" constant="no"/>
+<attribute name="PROD_ID" value="IC-15119" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9774,7 +9778,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="IC1" library="New_Parts" deviceset="ADS122C04IPWR" device=""/>
+<part name="IC1" library="SparkFun-IC-Conversion" deviceset="ADS122C04IPWR" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="JP0" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -9787,7 +9791,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0603-1/10W-1%" value="2.2k"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="3.9KOHM" device="-0603-1/10W-1%" value="3.9k"/>
-<part name="R9" library="New_Parts" deviceset="RESISTOR" device="0603" value="1620"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="1620OHM" device="-0603-0.1%-5PPM" value="1620"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-5%" value="0.1uF"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="10NF" device="-0603-50V-10%" value="10nF"/>

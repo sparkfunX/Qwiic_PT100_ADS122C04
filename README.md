@@ -29,3 +29,7 @@ reconfiguring the two jumpers A0 and A1. Please see the schematic for further de
 ## Library
 
 - **[Arduino Library](https://github.com/sparkfun/SparkFun_ADS122C04_ADC_Arduino_Library)** - Library to support the ADS122C04
+
+## Probe Disconnection
+
+If you need to test if the PT100 probe has been connected correctly to the ADS122C04, you may find [this discussion](https://forum.sparkfun.com/viewtopic.php?p=231735#p231735) useful.
